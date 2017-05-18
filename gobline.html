@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+        *{
+            margin: 0;
+            font-family: sans-serif, monospace;
+        }
+        #menu{
+            background-color: darkred;
+            
+        }
+        #menu li{
+            color: #FFFFFF;
+            display: inline;
+        }
+        table{
+            border: 0;
+        }
+        li { cursor: pointer; cursor: hand; }
+        </style>
+    </head>
+    <body>
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <iframe align="right"  height="35" src="https://www.youtube.com/embed/5rD98g7imOA?&amp;autoplay=1&amp;loop=1 frameborder="></iframe>
+                </td>
+            </tr>
+
+            <tr height="96">
+                <td align="center">
+                        <a href="gobline.html" align="center">
+                        <img width="100px" height="150px" src="images/main/logo.jpg"/>
+                    </a>
+                </td>
+            </tr>
+
+            <!-- 메뉴-->
+            <tr>
+                <td id="menu" height="40" align="center" valign="middle">
+                    <ul>
+                        <li onClick="changeIframeUrl('main.html')"> | &nbsp; MAIN &nbsp; | </li>
+                        <li onclick="changeIframeUrl('introduction.html')"> &nbsp; INTRODUCTION &nbsp; | </li>
+                        <li onclick="changeIframeUrl('youtube.html')"> &nbsp; YOUTUBE &nbsp; | </li></li>
+                    </ul>
+                </td>
+                
+            </tr>
+        </table>
+        <script>
+            function changeIframeUrl(url)
+            {
+                document.getElementById("main_frame").src = url;
+            }
+        </script>
+        <iframe id="main_frame" name="main_frame" src="main.html" width="100%" height="2500" frameborder="0" marginwidth="0"  scrolling="no"/>
+    </body>
+</html>
